@@ -17,7 +17,7 @@ protocol DrawViewControllerDelegate {
 class DrawViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     var numOfRows : Int = 0
-    var delegate : DrawViewControllerDelegate?
+    var delegate : DrawViewControllerDelegate!
     var gameEngine : GameEngine!
     var timer : NSTimer!
     
@@ -85,7 +85,7 @@ class DrawViewController: UIViewController, UITableViewDelegate, UITableViewData
 
     //MARK: View logic methods
     func callDelegate() {
-        self.delegate!.drawFinished()
+        self.delegate.drawFinished()
     }
     
     func addRow() {

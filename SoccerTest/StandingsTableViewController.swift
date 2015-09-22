@@ -10,12 +10,13 @@ import UIKit
 
 class StandingsTableViewController: UITableViewController, DrawViewControllerDelegate, ResultViewControllerDelegate {
 
+    // game engine instance
     var gameEngine : GameEngine!
 
-    var numOfSections : Int = 0
-
+    // appdelegate
     let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
     
+    // KVO contexts
     var standingChangesContext = 0
     var match1_homeTeamScoresContext = 1
     var match1_awayTeamScoresContext = 2
@@ -25,6 +26,9 @@ class StandingsTableViewController: UITableViewController, DrawViewControllerDel
 
     var match1_matchInProgress = 5
     var match2_matchInProgress = 6
+
+    // number of sections
+    var numOfSections : Int = 0
     
     //MARK: view lifecycle methods
     override func viewDidLoad() {
@@ -49,8 +53,6 @@ class StandingsTableViewController: UITableViewController, DrawViewControllerDel
         super.viewDidAppear(animated)
         
         self.presentViewController("DrawViewController")
-        //self.presentViewController("FinalResultViewController")
-
 
     }
     
@@ -131,7 +133,7 @@ class StandingsTableViewController: UITableViewController, DrawViewControllerDel
     }
     
     //MARK: ResultViewControllerDelegate methods
-    func replay() {
+    func close() {
         self.dismissViewControllerAnimated(true) { () -> Void in
         }
     }

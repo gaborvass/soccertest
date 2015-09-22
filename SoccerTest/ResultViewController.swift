@@ -9,14 +9,14 @@
 import UIKit
 
 protocol ResultViewControllerDelegate {
-    func replay()
+    func close()
 }
 
 class ResultViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     @IBOutlet weak var tableView: UITableView!
     
-    var delegate : ResultViewControllerDelegate?
+    var delegate : ResultViewControllerDelegate!
     var gameEngine : GameEngine!
     var timer : NSTimer!
     
@@ -105,7 +105,7 @@ class ResultViewController: UIViewController, UITableViewDelegate, UITableViewDa
     
     //MARK: View logic methods
     func replayButtonClicked() {
-        self.delegate!.replay()
+        self.delegate.close()
     }
         
 }

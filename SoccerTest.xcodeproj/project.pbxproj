@@ -67,7 +67,7 @@
 		A04FD50E1BAC7F2E00B07CCB /* DrawTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawTableViewCell.swift; sourceTree = "<group>"; };
 		A04FD5101BACA33D00B07CCB /* GameEngine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameEngine.swift; sourceTree = "<group>"; };
 		A04FD51F1BADB3A800B07CCB /* MatchTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatchTableViewCell.swift; sourceTree = "<group>"; };
-		A0DC46661BAAB29E00215B1B /* SoccerTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SoccerTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0DC46661BAAB29E00215B1B /* SoccerTestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SoccerTestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0DC46691BAAB29E00215B1B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A0DC466B1BAAB29E00215B1B /* StandingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandingsTableViewController.swift; sourceTree = "<group>"; };
 		A0DC466E1BAAB29E00215B1B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -132,7 +132,7 @@
 		A0DC46671BAAB29E00215B1B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A0DC46661BAAB29E00215B1B /* SoccerTest.app */,
+				A0DC46661BAAB29E00215B1B /* SoccerTestApp.app */,
 				A0DC467A1BAAB29E00215B1B /* SoccerTest.xctest */,
 			);
 			name = Products;
@@ -147,7 +147,6 @@
 				A0DC46701BAAB29E00215B1B /* Assets.xcassets */,
 				A0DC46751BAAB29E00215B1B /* Info.plist */,
 			);
-			name = SoccerTest;
 			path = SoccerTest;
 			sourceTree = "<group>";
 		};
@@ -157,7 +156,6 @@
 				A0DC467E1BAAB29E00215B1B /* UnitTests.swift */,
 				A0DC46801BAAB29E00215B1B /* Info.plist */,
 			);
-			name = SoccerTestUnitTests;
 			path = SoccerTestUnitTests;
 			sourceTree = "<group>";
 		};
@@ -189,7 +187,7 @@
 			);
 			name = SoccerTest;
 			productName = SoccerTest;
-			productReference = A0DC46661BAAB29E00215B1B /* SoccerTest.app */;
+			productReference = A0DC46661BAAB29E00215B1B /* SoccerTestApp.app */;
 			productType = "com.apple.product-type.application";
 		};
 		A0DC46791BAAB29E00215B1B /* SoccerTestUnitTests */ = {
